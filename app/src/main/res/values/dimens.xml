@@ -1,0 +1,9 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="recording_filename_dialog_padding">16dp</dimen>
+    <dimen name="feature_labeling_dialog_padding">16dp</dimen>
+    <dimen name="general_text_size">24sp</dimen>
+    <dimen name="error_dialog_text_size">24sp</dimen>
+    <dimen name="recording_controller_buttons_text_size">24sp</dimen>
+    <dimen name="analyze_selected_recordings_button_text_size">24sp</dimen>
+</resources>

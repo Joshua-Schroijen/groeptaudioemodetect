@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/feature_labeling_popup"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/feature_labeling_dialog_padding">
+
+    <TextView
+        android:id="@+id/feature_labels_prompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/general_text_size"
+        android:text="Please indicate your valence and arousal respectively" />
+
+    <groept.be.emodetect.uihelpers.LabeledSlider
+        android:id ="@+id/feature_labeling_valence_slider_input"
+        android:layout_width ="match_parent"
+        android:layout_height ="wrap_content"
+        app:sliderPurpose="Valence"
+        app:sliderMin="-1"
+        app:sliderMax="1" />
+
+    <groept.be.emodetect.uihelpers.LabeledSlider
+        android:id ="@+id/feature_labeling_arousal_slider_input"
+        android:layout_width ="match_parent"
+        android:layout_height ="wrap_content"
+        app:sliderPurpose="Arousal"
+        app:sliderMin="-1"
+        app:sliderMax="1" />
+
+    <LinearLayout
+        android:id="@+id/feature_labeling_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/feature_labeling_cancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/feature_labeling_submit"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Submit" />
+    </LinearLayout>
+</LinearLayout>

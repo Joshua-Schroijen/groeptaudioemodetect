@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/new_recording_filename_popup"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/recording_filename_dialog_padding" >
+
+    <TextView
+        android:id="@+id/new_recording_filename_prompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/general_text_size"
+        android:text="Please enter the new recording's name" />
+
+    <EditText
+        android:id="@+id/new_recording_filename_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:maxLines="1" />
+
+    <LinearLayout
+        android:id="@+id/new_recording_filename_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <Button
+            android:id="@+id/new_recording_filename_cancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Cancel" />
+
+            <!--
+            android:layout_toLeftOf="@+id/new_recording_filename_submit"
+             -->
+
+        <Button android:id="@+id/new_recording_filename_submit"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Submit" />
+
+            <!--
+               android:layout_centerVertical="true"
+               android:layout_alignParentRight="true"
+              -->
+
+    </LinearLayout>
+</LinearLayout>

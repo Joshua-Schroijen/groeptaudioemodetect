@@ -1,0 +1,30 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="ANALYZER WEB SERVICE" >
+
+        <EditTextPreference
+            android:key="web_service_URL"
+            android:title="@string/web_service_URL_preference_title"
+            android:summary="@string/web_service_URL_preference_summary"
+            android:dialogTitle="@string/web_service_URL_dialog_title"
+            android:dialogMessage="@string/web_service_URL_dialog_message"
+            android:inputType="textUri"
+            android:defaultValue="@string/default_web_service_URL"
+            android:capitalize="none"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true" />
+
+        <ListPreference
+            android:key="emotion_classification_method"
+            android:entries="@array/emotion_classification_methods_entries"
+            android:entryValues="@array/emotion_classification_methods_entry_values"
+            android:defaultValue="1"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:title="@string/emotion_classification_method_selection_list_title" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

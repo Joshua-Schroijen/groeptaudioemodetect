@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="emotion_classification_methods_entries">
+        <item>SVM based</item>
+        <item>ANN based</item>
+    </string-array>
+    <string-array name="emotion_classification_methods_entry_values">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+</resources>
